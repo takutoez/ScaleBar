@@ -1,4 +1,3 @@
-export const LINE_SIZE = 1;
 export const LINE_COLOR = "rgba(10, 10, 10, 1)";
 export const LIMIT_SIZE = 5;
 export const SCALE_SCREEN_RATIO = 0.45;

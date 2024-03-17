@@ -15,7 +15,8 @@ type Props = {
   lengthMeter: number,
   lengthFeet: number,
   scaleTextMeters: string,
-  scaleTextFeet: string
+  scaleTextFeet: string,
+  borderWidth: number
 };
 
 export default class ScaleBarView extends Component<Props> {
@@ -38,28 +39,33 @@ export default class ScaleBarView extends Component<Props> {
           padding_bottom={this.props.padding_bottom}
           padding_left={this.props.padding_left}
           length={this.props.lengthMeter}
+          borderWidth={this.props.borderWidth}
         />
 
         <VerticalLine
           padding_bottom={this.props.padding_bottom}
           padding_left={this.props.padding_left}
           length={LIMIT_SIZE}
+          borderWidth={this.props.borderWidth}
         />
         <VerticalLine
           padding_bottom={this.props.padding_bottom}
           padding_left={this.props.padding_left + this.props.lengthMeter}
           length={LIMIT_SIZE}
+          borderWidth={this.props.borderWidth}
         />
 
         <VerticalLine
           padding_bottom={this.props.padding_bottom - LIMIT_SIZE}
           padding_left={this.props.padding_left}
           length={LIMIT_SIZE}
+          borderWidth={this.props.borderWidth}
         />
         <VerticalLine
           padding_bottom={this.props.padding_bottom - LIMIT_SIZE}
           padding_left={this.props.padding_left + this.props.lengthFeet}
           length={LIMIT_SIZE}
+          borderWidth={this.props.borderWidth}
         />
       </View>
     );

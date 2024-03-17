@@ -3,12 +3,13 @@
 import React, { Component } from "react";
 import { View } from "react-native";
 
-import { LINE_SIZE, LINE_COLOR } from "./constants";
+import { LINE_COLOR } from "./constants";
 
 type Props = {
   padding_left: number,
   padding_bottom: number,
-  length: number
+  length: number,
+  borderWidth: number
 };
 
 export default class HorizontalLine extends Component<Props> {
@@ -20,7 +21,7 @@ export default class HorizontalLine extends Component<Props> {
           left: this.props.padding_left,
           width: this.props.length,
           position: "absolute",
-          height: LINE_SIZE,
+          height: this.props.borderWidth,
           backgroundColor: LINE_COLOR
         }}
       />
