@@ -16,7 +16,8 @@ type Props = {
   lengthFeet: number,
   scaleTextMeters: string,
   scaleTextFeet: string,
-  borderWidth: number
+  borderWidth: number,
+  fontSize: number
 };
 
 export default class ScaleBarView extends Component<Props> {
@@ -27,12 +28,14 @@ export default class ScaleBarView extends Component<Props> {
           padding_bottom={this.props.padding_bottom + 1}
           padding_left={this.props.padding_left}
           text={this.props.scaleTextMeters}
+          fontSize={this.props.fontSize}
         />
 
         <ScaleText
-          padding_bottom={this.props.padding_bottom - 14}
+          padding_bottom={this.props.padding_bottom - this.props.fontSize - 4}
           padding_left={this.props.padding_left}
           text={this.props.scaleTextFeet}
+          fontSize={this.props.fontSize}
         />
 
         <HorizontalLine

@@ -6,7 +6,8 @@ import { View, Text } from "react-native";
 type Props = {
   text: string,
   padding_bottom: number,
-  padding_left: number
+  padding_left: number,
+  fontSize: number
 };
 
 export default class ScaleText extends Component<Props> {
@@ -21,7 +22,7 @@ export default class ScaleText extends Component<Props> {
       >
         <Text
           style={{
-            fontSize: 10,
+            fontSize: this.props.fontSize,
             color: "black"
           }}
         >

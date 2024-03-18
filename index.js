@@ -11,6 +11,7 @@ type Props = {
   bottom: number,
   left: number,
   borderWidth: number,
+  fontSize: number
 };
 
 class ScaleBar extends Component<Props> {
@@ -19,6 +20,7 @@ class ScaleBar extends Component<Props> {
     bottom: 42,
     left: 10,
     borderWidth: 1,
+    fontSize: 12
   };
 
   render() {
