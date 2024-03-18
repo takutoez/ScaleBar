@@ -40,6 +40,7 @@ class ScaleBar extends Component<Props> {
         scaleTextMeters={scaleBarTextInMeters}
         scaleTextFeet={scaleBarTextInFeet}
         borderWidth={this.props.borderWidth}
+        fontSize={this.props.fontSize}
       />
     );
   }
