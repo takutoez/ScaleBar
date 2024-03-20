@@ -17,13 +17,19 @@ type Props = {
   scaleTextMeters: string,
   scaleTextFeet: string,
   borderWidth: number,
-  fontSize: number
+  fontSize: number,
 };
 
 export default class ScaleBarView extends Component<Props> {
   render() {
     return (
-      <View style={{ position: 'absolute' }}>
+      <View
+        style={{
+          position: "absolute",
+          bottom: 0,
+          left: 0,
+        }}
+      >
         <ScaleText
           padding_bottom={this.props.padding_bottom + 1}
           padding_left={this.props.padding_left}
