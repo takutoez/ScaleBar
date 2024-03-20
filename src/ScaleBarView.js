@@ -23,7 +23,7 @@ type Props = {
 export default class ScaleBarView extends Component<Props> {
   render() {
     return (
-      <View>
+      <View style={{ position: 'absolute' }}>
         <ScaleText
           padding_bottom={this.props.padding_bottom + 1}
           padding_left={this.props.padding_left}
