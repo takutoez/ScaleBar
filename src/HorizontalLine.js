@@ -3,7 +3,7 @@
 import React, { Component } from "react";
 import { View } from "react-native";
 
-import { LINE_COLOR } from "./constants";
+import { BORDER_COLOR, LINE_COLOR } from "./constants";
 
 type Props = {
   padding_left: number,
