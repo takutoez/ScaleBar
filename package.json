@@ -23,7 +23,9 @@
     "url": "https://github.com/felixgourdeau/ScaleBar/issues"
   },
   "dependencies": {
-    "ramda": "^0.25.0",
+    "ramda": "^0.25.0"
+  },
+  "devDependencies": {
     "react-native-svg": "^15.1.0"
   }
 }
