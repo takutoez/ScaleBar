@@ -9,7 +9,7 @@ type Props = {
   padding_left: number,
   padding_bottom: number,
   length: number,
-  borderWidth: number
+  borderWidth: number,
 };
 
 export default class HorizontalLine extends Component<Props> {
@@ -21,8 +21,11 @@ export default class HorizontalLine extends Component<Props> {
           left: this.props.padding_left,
           width: this.props.length,
           position: "absolute",
-          height: this.props.borderWidth,
-          backgroundColor: LINE_COLOR
+          height: this.props.borderWidth + 1,
+          backgroundColor: LINE_COLOR,
+          borderTopWidth: 0.5,
+          borderBottomWidth: 0.5,
+          borderColor: BORDER_COLOR,
         }}
       />
     );

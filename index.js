@@ -11,7 +11,7 @@ type Props = {
   bottom: number,
   left: number,
   borderWidth: number,
-  fontSize: number
+  fontSize: number,
 };
 
 class ScaleBar extends Component<Props> {
@@ -20,7 +20,7 @@ class ScaleBar extends Component<Props> {
     bottom: 42,
     left: 10,
     borderWidth: 1,
-    fontSize: 12
+    fontSize: 12,
   };
 
   render() {
@@ -28,7 +28,7 @@ class ScaleBar extends Component<Props> {
       scaleBarSizeInMeters,
       scaleBarTextInMeters,
       scaleBarSizeInFeet,
-      scaleBarTextInFeet
+      scaleBarTextInFeet,
     } = getScaleBarInfoFromZoomLevel(this.props.zoom, this.props.latitude);
 
     return (
