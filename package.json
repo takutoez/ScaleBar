@@ -26,6 +26,6 @@
     "ramda": "^0.25.0"
   },
   "devDependencies": {
-    "react-native-svg": "^15.1.0"
+    "react-native-svg": "15.2.0-rc.0"
   }
 }
