@@ -22,7 +22,7 @@ export default class ScaleText extends Component<Props> {
             ${this.props.text}
           </text>
       </svg>`,
-    )!
+    );
 
     return (
       <View
